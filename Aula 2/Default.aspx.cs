@@ -14,8 +14,11 @@ public partial class _Default : System.Web.UI.Page
 
     protected void btnSave_Click(object sender, EventArgs e)
     {
-        txtBox.Text = "<div class='alert alert-sucess'> " + nome.Text + " " + sobrenome.Text + " <br />UF: " + drop.SelectedItem +
-             " - " + drop.SelectedValue 
+        txtBox.Text = "<div class='alert alert-sucess'> " +
+               nome.Text + " " + sobrenome.Text + " <br />UF: " + drop.SelectedItem +
+             " - " + drop.SelectedValue +
+            "<br /><strong>Tipo de casa: " + radio.SelectedItem + "</strong>" +
+            "<br /><strong>Gênero: " + check.SelectedItem + "</strong>"
             + "</div>";
         nome.Text = "";
         sobrenome.Text = "";

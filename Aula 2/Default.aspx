@@ -28,6 +28,20 @@
             </asp:DropDownList>
             <br />
             <br />
+            <br />
+            <asp:RadioButtonList ID="radio" runat="server" Width="247px" RepeatDirection="Horizontal">
+                <asp:ListItem>Casa</asp:ListItem>
+                <asp:ListItem>Apartamento</asp:ListItem>
+                <asp:ListItem>Bunker</asp:ListItem>
+            </asp:RadioButtonList>
+            <br />
+            <asp:CheckBoxList ID="check" runat="server" RepeatDirection="Horizontal">
+                <asp:ListItem>Masculino</asp:ListItem>
+                <asp:ListItem>Feminino</asp:ListItem>
+                <asp:ListItem>Outro</asp:ListItem>
+            </asp:CheckBoxList>
+            <br />
+            <br />
 
             <asp:Button ID="btnSave" runat="server" Text="Salvar" CssClass="btn-primary" OnClick="btnSave_Click" />
 
